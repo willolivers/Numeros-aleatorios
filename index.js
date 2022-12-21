@@ -26,12 +26,14 @@ function averiguar() {
                 if (num.value == cont) {
                     res.innerHTML += `<p>PARABENS VOCÊ CONSEGUIU EM ${ale.length} TENTATIVAS</p>`
                     console.log(cont)
+                    ale.length = ''
                 }
             }
             num.value = ''
             num.focus()
         }
     }
+
     form.addEventListener('submit', recebeEvento)
 }
 
